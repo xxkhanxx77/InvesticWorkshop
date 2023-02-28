@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="PTTEP.BK <= 0.0\nsquared_error = 0.0\nsamples = 39\nvalue = 0.0"] ;
+1 [label="PTTGC.BK <= 0.0\nsquared_error = 0.0\nsamples = 29\nvalue = -0.0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="PTTEP.BK <= -0.0\nsquared_error = 0.0\nsamples = 21\nvalue = -0.0"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.0\nsamples = 2\nvalue = -0.0"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.0\nsamples = 19\nvalue = -0.0"] ;
+2 -> 4 ;
+5 [label="OR.BK <= 0.0\nsquared_error = 0.0\nsamples = 8\nvalue = 0.0"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.0\nsamples = 4\nvalue = -0.0"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.0\nsamples = 4\nvalue = 0.0"] ;
+5 -> 7 ;
+8 [label="PTTEP.BK <= 0.0\nsquared_error = 0.0\nsamples = 10\nvalue = 0.0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="squared_error = 0.0\nsamples = 1\nvalue = 0.1"] ;
+8 -> 9 ;
+10 [label="PTTGC.BK <= 0.0\nsquared_error = 0.0\nsamples = 9\nvalue = 0.0"] ;
+8 -> 10 ;
+11 [label="squared_error = 0.0\nsamples = 1\nvalue = -0.0"] ;
+10 -> 11 ;
+12 [label="squared_error = 0.0\nsamples = 8\nvalue = 0.0"] ;
+10 -> 12 ;
+}
