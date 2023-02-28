@@ -1,0 +1,48 @@
+digraph g {
+	graph [nodesep=1 ranksep=2 splines=false]
+	edge [arrowhead=none color="#707070"]
+	subgraph cluster_input {
+		node [color="#2ecc71" fontcolor="#2ecc71" shape=circle style=filled]
+		color=white
+		1
+		label="Workshop I
+
+
+
+Input Layer"
+		rank=same
+		2
+		label="Workshop I
+
+
+
+Input Layer"
+		rank=same
+		3
+		label="Workshop I
+
+
+
+Input Layer"
+		rank=same
+	}
+	1 -> 4
+	2 -> 4
+	3 -> 4
+	subgraph cluster_1 {
+		color=white
+		rank=same
+		label="" labeljust=right labelloc=b
+		4 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+	}
+	4 -> 5
+	subgraph cluster_output {
+		node [color="#2ecc71" fontcolor="#2ecc71" shape=circle style=filled]
+		color=white
+		rank=same
+		labeljust=1
+		5 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		label="Output Layer" labelloc=bottom
+	}
+	arrowShape=none
+}
